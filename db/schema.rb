@@ -17,18 +17,8 @@ ActiveRecord::Schema.define(:version => 20130610133452) do
     t.string   "client_name"
     t.string   "roman_name"
     t.string   "tel"
-    t.string   "department_name"
-    t.integer  "contract_flg"
-    t.integer  "contract_type"
-    t.integer  "del_flg",         :default => 0
-    t.integer  "create_user_id"
-    t.integer  "update_user_id"
-    t.string   "person_charge"
-    t.string   "person_sale"
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
-
-  add_index "clients", ["client_name"], :name => "index_clients_on_client_name", :unique => true
 
 end
