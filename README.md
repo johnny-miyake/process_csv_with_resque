@@ -10,7 +10,7 @@ $ rails s
 
 ## Usage
 1. Access to `http://localhost:3000`
-2. Select a CSV file ( `http://localhost:3000/public/clients.csv` is available) and upload it.
+2. Select a CSV file ( `http://localhost:3000/clients.csv` is available) and upload it.
 3. Reload your browser and confirm that the data you have just uploaded has not been saved in DB.
 4. Wait for 90 seconds.
 5. Reload your browser and confirm that the data you have uploaded is shown in the list.
