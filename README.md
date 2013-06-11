@@ -9,8 +9,9 @@ $ rails s
 ```
 
 ## Usage
-1. Access to `http://localhost:3000`
+1. Open two tabs and access to `http://localhost:3000`(tab1) and `http://localhost:3000/resque`(tab2).
 2. Select a CSV file ( `http://localhost:3000/clients.csv` is available) and upload it.
-3. Reload your browser and confirm that the data you have just uploaded has not been saved in DB.
-4. Wait for 90 seconds.
-5. Reload your browser and confirm that the data you have uploaded is shown in the list.
+3. Reload tab1 and confirm that the data you have just uploaded has not been saved in DB yet.
+4. Reload tab2 and confirm that a background job is being executed.
+5. Wait for 30 seconds.
+6. Reload tab1 again and confirm that the data you have uploaded is shown in the list.
