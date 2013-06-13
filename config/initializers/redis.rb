@@ -5,8 +5,5 @@ port = /port.(\d+)/.match(redis_conf)[1]
 host = "localhost"
 `redis-server #{redis_conf_path}`
 res = `ps aux | grep redis-server`
-unless res.include?("redis-server") && res.include?(redis_conf_path.to_s)
-  raise "Couldn't start redis"
-end
 # You can do below if you use Redis directly in your application.
 # $redis = Redis.new(host: host, port: port)

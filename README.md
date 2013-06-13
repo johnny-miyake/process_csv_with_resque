@@ -7,7 +7,8 @@ $ git clone git@github.com:johnny-miyake/process_csv_with_resque.git
 $ cd process_csv_with_resque/
 $ bundle install
 $ rake db:migrate
-$ bundle exec rake resque:work QUEUE="*" &
+$ bundle exec rake resque:work QUEUE="*"
+(open another terminal and go to project dir)
 $ rails s
 ```
 
@@ -18,6 +19,8 @@ $ rails s
 4. Reload tab2 and confirm that a background job is being executed.
 5. Wait for 30 seconds.
 6. Reload tab1 again and confirm that the data you have uploaded is shown in the list.
+
+relaunch the Resque worker every time you modify a worker script (e.g. `app/workers/import_csv.rb`).
 
 ## Explanation
 Followings are explanations of some principal files on this application.
