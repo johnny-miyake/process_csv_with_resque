@@ -120,3 +120,6 @@ class ClientsController < ApplicationController
   end
 end
 ```
+
+## Operation check
+This sample project is performed an operation check on `ruby 1.9.3p392` and `Rails 3.2.13`.
