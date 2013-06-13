@@ -1,3 +1,6 @@
+# process_csv_with_resque
+This is a small example project of processing CSV file with Resque. Checkout this project and you can try it easily.
+
 ## Setup
 ```sh
 $ git clone git@github.com:johnny-miyake/process_csv_with_resque.git
