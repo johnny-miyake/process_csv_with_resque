@@ -66,7 +66,7 @@ task "resque:setup" => :environment
 ```
 
 ### Worker
-`app/workers/import\_csv`
+`app/workers/import_csv.rb`
 This is the worker for processing CSV file. It starts processing CSV after 30
 seconds later it is called.
 ```ruby
@@ -88,7 +88,7 @@ end
 ```
 
 ### Controller
-`app/controllers/clients\_controller.rb`
+`app/controllers/clients_controller.rb`
 This is the controller for uploading CSV file. Job for uploading CSV file is
 enqueued in create_by_csv action.
 
