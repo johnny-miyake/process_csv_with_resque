@@ -3,6 +3,7 @@ This is a small example project of processing CSV file with Resque. Checkout thi
 
 ## Setup
 ```sh
+(Install Redis before you run this app)
 $ git clone git@github.com:johnny-miyake/process_csv_with_resque.git
 $ cd process_csv_with_resque/
 $ bundle install
@@ -21,7 +22,7 @@ $ rails s
 6. Reload tab1 again and confirm that the data you have uploaded is shown in the list.
 
 * Relaunch the Resque worker every time you modify a worker script (e.g. `app/workers/import_csv.rb`).
-* You must install Redis before you run this app.
+
 
 ## Explanation
 Followings are explanations of some principal files on this application.
