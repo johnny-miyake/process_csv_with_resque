@@ -20,7 +20,8 @@ $ rails s
 5. Wait for 30 seconds.
 6. Reload tab1 again and confirm that the data you have uploaded is shown in the list.
 
-relaunch the Resque worker every time you modify a worker script (e.g. `app/workers/import_csv.rb`).
+* Relaunch the Resque worker every time you modify a worker script (e.g. `app/workers/import_csv.rb`).
+* You must install Redis before you run this app.
 
 ## Explanation
 Followings are explanations of some principal files on this application.
